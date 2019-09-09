@@ -1,0 +1,38 @@
+.hot-articles {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+
+    .hot-box {
+
+        .hot {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #999;
+
+            .msg-box {
+                display: inline-block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .number {
+                    display: inline-block;
+                    color: #fff;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                }
+                .title {
+                    padding: 10px;
+                }
+            }
+            .count {
+                font-size: 14px;
+                color: #333;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.page-index {
+    width: 100%;
+    margin-top: -120px;
+
+    .slider {
+        z-index: 2;
+
+        h1 {
+            
+            @media screen and (max-width: 992px) {
+                font-size: 25px;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .go-buttom {
+            display: flex;
+            justify-content: center;
+            padding-top: 140px;
+            font-size: 50px;
+            color: rgba(255, 255, 255, .8);
+
+            @media screen and (max-width: 992px) {
+                font-size: 30px;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+            
+            .icon-gobuttom {
+                @keyframes jump {
+                    0% {
+                        transform: translateY(0);
+                    };
+                    50% {
+                        transform: translateY(-20px);
+                    };
+                    100% {
+                        transform: translateY(0);
+                    };
+                }
+                animation: jump 1s ease-in-out infinite;
+                
+                &:hover {
+                    animation: none;
+                }
+            }
+        }
+    }
+}

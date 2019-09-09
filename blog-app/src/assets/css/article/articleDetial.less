@@ -1,0 +1,83 @@
+.article-box {
+
+    .title {
+        text-align: center;
+        color: #333;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .author-box {
+        padding: 10px 0;
+        font-size: 13px;
+        color: #666;
+
+        span {
+            margin-right: 15px;
+        }
+
+        .tags {
+            padding: 10px 0;
+
+            .tag {
+                margin-right: 5px;
+                padding: 3px 5px;
+                border-radius: 5px;
+                border: 1px solid #444;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .bottom-btn {
+        padding: 40px 0;
+        text-align: center;
+
+        span {
+            padding: 10px 15px;
+            background-color: #38f;
+            color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &.like {
+                margin-left: 20px;
+                background-color: #f40;
+            }
+        }
+    }
+
+    .pages {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            display: inline-block;
+            width: 150px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #444;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #333;
+            cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+
+            &.prev {
+                border-left: none; 
+            }
+            &.next {
+                border-right: none; 
+            }
+        }
+        
+    }
+
+    
+}

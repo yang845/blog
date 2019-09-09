@@ -1,0 +1,27 @@
+.page-box {
+    text-align: center;
+
+    li {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 3px;
+        // border: 1px solid #38f;
+        cursor: pointer;
+
+        &.page-curr {
+            color: #333;
+        }
+
+        &.page-count{
+            border: 1px solid #a9a9a9;
+            color: #888;
+
+            &:hover{
+                color: #3385ff;
+                border: 1px solid #3385ff;
+            }
+        }
+    }
+}

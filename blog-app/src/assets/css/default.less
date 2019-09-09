@@ -1,0 +1,181 @@
+.default-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fefefe;
+    overflow-x: hidden;
+
+    .nav-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+
+        .container {
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 992px) {
+                width: 90%;
+
+                @media (max-width: 768px) {
+                    justify-content: space-between;
+                }
+            }
+
+            .logo {
+                font-size: 20px;
+                padding: 0 20px;
+                color: #333;
+            }
+
+            .nav-menu {
+                @media screen and (max-width: 768px) {
+                    position: fixed;
+                    top: 60px;
+                    left: 0;
+                    width: 100vw;
+                    text-align: center;
+                    background-color: rgb(250, 250, 250);
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+                }
+
+                .link {
+                    position: relative;
+                    padding: 15px 15px;
+                    transition: all 0.3s linear;
+
+                    @media screen {
+                        &.index {
+                            display: inline-block;
+                        }
+
+                        @media (max-width: 992px) {
+                            padding: 10px 15px;
+
+                            &.index {
+                                display: none;
+                            }
+
+                            @media (max-width: 768px) {
+                                display: block;
+                                padding: 20px;
+                                border-bottom: 1px solid #ddd;
+                            }
+                        }
+                    }
+
+
+                    &:hover {
+                        color: #000;
+
+                        &::before {
+                            background-color: rgba(0, 0, 0, 0);
+                            opacity: 0.6;
+                            transform: scaleX(0.8) scaleY(0.618);
+                        }
+                    }
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        content: '';
+                        opacity: 0;
+                        transform: scale(1.1);
+                        transition: opacity 0.3s, background-color 0.2s, transform 0.3s;
+                    }
+
+                }
+            }
+
+            .btn {
+                font-size: 24px;
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: block;
+                }
+            }
+
+        }
+
+    }
+
+    .footer-wrapper {
+        padding: 30px 0;
+        margin-top: 50px;
+        background-color: #fff;
+        border-top: 1px solid #eee;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .foot-t {
+                padding: 10px 0;
+
+                .foot-icon {
+                    cursor: pointer;
+                    margin: 0 15px;
+                    font-size: 36px;
+
+                    @media screen and (max-width:768px) {
+                        margin: 0 10px;
+                    font-size: 24px;
+                    }
+
+                    .icon-user1 {
+                        color: #38f;
+                    }
+
+                    &.icon-mail {
+                        color: #f40;
+                    }
+
+                    &.icon-weixin {
+                        color: #00d500;
+                    }
+
+                    &.icon-github {
+                        color: #000;
+                    }
+                }
+            }
+
+            .foot-b {
+                @media screen and (max-width:768px) {
+                    font-size: 14px;
+                }
+
+                .name {
+                    font-weight: 600;
+                    color: #38f;
+                    margin-left: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .wechat-img {
+        width: 100%;
+        height: auto;
+    }
+}

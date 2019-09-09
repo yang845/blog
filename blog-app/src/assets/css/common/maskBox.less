@@ -1,0 +1,43 @@
+.mask-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .7);
+
+    .content-box {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 30%;
+        color: #333;
+        background-color: #fff;
+        border-radius: 5px;
+
+        .header {
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            // font-size: 14px;
+            font-weight: 700;
+
+            .icon-close {
+                cursor: pointer;
+            }
+        }
+
+        .content {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #606266;
+        }
+
+        .footer {
+            padding: 10px 15px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.unit-form {
+    width: 100%;
+
+    form {
+        .error-box {
+            margin-bottom: 10px;
+
+            .error {
+                display: inline-block;
+                // padding: 10px 15px;
+                // border-radius: 10px;
+                color: red;
+                font-size: 12px;
+                text-indent: 1em;
+                // border: 1px solid;
+            }
+        }
+
+        .input-box {
+            width: 100%;
+            display: flex;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            label {
+                display: inline-block;
+                white-space: nowrap;
+                padding: 5px 15px;
+                background-color: #38f;
+            }
+
+            input {
+                flex: 1;
+                height: 80%;
+                border: none;
+                outline: none;
+                text-indent: 1em;
+            }
+
+            &.nick-addr {
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .nickname,
+                .address {
+                    display: flex;
+                    align-items: center;
+                    width: 45%;
+                    border: 2px solid #38f;
+
+                    @media screen and (max-width: 767px) {
+                        width: 100%;
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            .website {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border: 2px solid #38f;
+            }
+
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .comment-sub {
+            padding: 10px 0;
+            overflow: hidden;
+
+            #submit {
+                float: right;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 10px;
+                background-color: #38f;
+                color: #fff;
+                font-weight: 700;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

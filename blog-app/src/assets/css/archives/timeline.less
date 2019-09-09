@@ -1,0 +1,67 @@
+.timeline {
+
+    .archives {
+        width: 100%;
+        min-height: 40px;
+        display: flex;
+
+        &:last-child {
+            .circle-box {
+                border-bottom: 3px solid #38f;
+            }
+        }
+        
+        .circle-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .line {
+                width: 3px;
+                flex: 1;
+                height: 100%;
+                background-color: #38f;
+            }
+
+            .circle {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                line-height: 26px;
+                font-size: 18px;
+                text-align: center;
+                color: #fff;
+                font-weight: bolder;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #38f;
+                cursor: pointer;
+            }
+        }
+
+        .message-box {
+            display: flex;
+            padding: 0px 10px 5px;
+            flex-direction: column;
+
+            .time {
+                color: #555;
+                font-weight: bolder;
+                // font-size: 20px;
+                padding-bottom: 5px;
+                cursor: pointer;
+            }
+
+            a {
+                padding: 10px 0 0 25px;
+                color: #888;
+                font-size: 14px;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: #38f;
+                }
+            }
+        }
+    }
+}

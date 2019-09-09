@@ -1,0 +1,15 @@
+**/node_modules
+**/.DS_Store
+**/dist
+
+*/.env.local
+*/.env.*.local
+
+**/.idea
+**/.vscode
+
+**/__pycache__
+*/*env
+
+*/migrations
+

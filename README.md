@@ -9,7 +9,7 @@ A simple blog
 
 ### 部分页面展示
 
-![](img\index.png)
+![](https://github.com/yang845/blog/blob/dev/img/index.png)
 
-![](img\detial.png)
+![](https://github.com/yang845/blog/blob/dev/img/detial.png)
 
